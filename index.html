@@ -36,40 +36,6 @@ document.fractions.val4.value=result;
 </Script>
 </head>
 
-<!--v comp-->
-<center>
-<h3>Fraction Reducer</h3>
-</center>
-<form name="fractions">
-<table>
-<tr>
-<td>
-
-<!--
-Here I have chosen "maxlength=6" which only enables the input of a six-figure number. If you have
-a slow computer it's not recommended to use values higher than 6, because this would lead to very long
-calculating times.
--->
-
-numerator<td><input name="variable1" size=20 maxlength=6></td></tr>
-<tr>
-<td>denominator<td><input name="variable2" size=20 maxlength=6></td></tr>
-
-
-<tr>
-<td><input type="button" value="Reduce fraction" onClick="compute()">
-<td><input name="val4" size=60>
-</td></tr>
-
-</table>
-<br><br><center>
-<input type="reset" value="Reset">
-</center>
-
-</form>
-<br><br>
-
-For the input of more than six-figure numbers please read the source code!
-
-
 <object type="text/html" data="https://www.prodigygame.com/Play/" height="500" width="800"></object>
+
+<center><h3>Fraction Reducer</h3></center><form name="fractions"><table><tr><td>numerator<td><input name="variable1" size=20 maxlength=6></td></tr><tr><td>denominator<td><input name="variable2" size=20 maxlength=6></td></tr><tr><td><input type="button" value="Reduce fraction" onClick="compute()"><td><input name="val4" size=60></td></tr></table><br><br><center><input type="reset" value="Reset"></center></form><br><br>
