@@ -1,1 +1,4 @@
+<head>
 <Script language="Javascript">function compute(){var val1=document.fractions.variable1.value;var val2=document.fractions.variable2.value;var val3=0;while(val1%2==0 && val2%2==0){val1=val1/2;val2=val2/2;val3=val3+1;}var counter=3;while(counter<=val1 && counter<=val2){while(val1%counter==0 && val2%counter==0){val1=val1/counter;val2=val2/counter;val3=val3+1;}counter=counter+2;}var result=val1 + "/" +val2;if(val3==0){document.fractions.val4.value="The fraction " +val1 +"/" +val2+" cannot be reduced any more!";}else{document.fractions.val4.value=result;}}</Script>
+</head>
+<p>Fraction Reducer<p/><br><form name="fractions"><table><tr><td>numerator<td><input name="variable1" size=5 maxlength=6></td></tr><tr><td>denominator<td><input name="variable2" size=5 maxlength=6></td></tr><tr><td><input type="button" value="Reduce fraction" onClick="compute()"><td><input name="val4" size=10></td></tr></table><input type="reset" value="Reset"></form>
